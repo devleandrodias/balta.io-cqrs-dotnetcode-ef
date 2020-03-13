@@ -1,0 +1,8 @@
+D:\balta.io-cqrs-dotnetcode-ef\Todo\Todo.Domain\bin\Debug\netstandard2.0\Todo.Domain.deps.json
+D:\balta.io-cqrs-dotnetcode-ef\Todo\Todo.Domain\bin\Debug\netstandard2.0\Todo.Domain.dll
+D:\balta.io-cqrs-dotnetcode-ef\Todo\Todo.Domain\bin\Debug\netstandard2.0\Todo.Domain.pdb
+D:\balta.io-cqrs-dotnetcode-ef\Todo\Todo.Domain\obj\Debug\netstandard2.0\Todo.Domain.csprojAssemblyReference.cache
+D:\balta.io-cqrs-dotnetcode-ef\Todo\Todo.Domain\obj\Debug\netstandard2.0\Todo.Domain.AssemblyInfoInputs.cache
+D:\balta.io-cqrs-dotnetcode-ef\Todo\Todo.Domain\obj\Debug\netstandard2.0\Todo.Domain.AssemblyInfo.cs
+D:\balta.io-cqrs-dotnetcode-ef\Todo\Todo.Domain\obj\Debug\netstandard2.0\Todo.Domain.dll
+D:\balta.io-cqrs-dotnetcode-ef\Todo\Todo.Domain\obj\Debug\netstandard2.0\Todo.Domain.pdb
