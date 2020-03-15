@@ -1,7 +1,7 @@
 using System;
 using Todo.Domain.Commands.Contracts;
 
-namespace Todo.Domain.Commands
+namespace Todo.Domain.Commands.Generics
 {
     public class GenericCommandResult : ICommandResult
     {

@@ -1,43 +1,105 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "Flunt/1.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Flunt.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Flunt.dll": {}
+        }
+      },
+      "Todo.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "flunt": "1.0.4"
+        },
+        "compile": {
+          "bin/placeholder/Todo.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Todo.Domain.dll": {}
+        }
+      },
+      "Todo.Domain.Infra/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Todo.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Todo.Domain.Infra.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Todo.Domain.Infra.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Flunt/1.0.4": {
+      "sha512": "zsKA3Wol1+UeQBYtXuO56+ua6DBUpD5dcp3iAa86W5WcMLOWBMaDXKdqIrrLNgQUOW/U/svecb4ldgqwnC9XDQ==",
+      "type": "package",
+      "path": "flunt/1.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "flunt.1.0.4.nupkg.sha512",
+        "flunt.nuspec",
+        "lib/netstandard2.0/Flunt.dll"
+      ]
+    },
+    "Todo.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Todo.Domain/Todo.Domain.csproj",
+      "msbuildProject": "../Todo.Domain/Todo.Domain.csproj"
+    },
+    "Todo.Domain.Infra/1.0.0": {
+      "type": "project",
+      "path": "../Todo.Domain.Infra/Todo.Domain.Infra.csproj",
+      "msbuildProject": "../Todo.Domain.Infra/Todo.Domain.Infra.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "Todo.Domain >= 1.0.0",
+      "Todo.Domain.Infra >= 1.0.0"
+    ]
   },
   "packageFolders": {
-    "C:\\Users\\ldbdias\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\leand\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\balta.io-cqrs-dotnetcode-ef\\Todo\\Todo.Domain.Api\\Todo.Domain.Api.csproj",
+      "projectUniqueName": "E:\\balta.io-cqrs-dotnetcode-ef\\Todo\\Todo.Domain.Api\\Todo.Domain.Api.csproj",
       "projectName": "Todo.Domain.Api",
-      "projectPath": "D:\\balta.io-cqrs-dotnetcode-ef\\Todo\\Todo.Domain.Api\\Todo.Domain.Api.csproj",
-      "packagesPath": "C:\\Users\\ldbdias\\.nuget\\packages\\",
-      "outputPath": "D:\\balta.io-cqrs-dotnetcode-ef\\Todo\\Todo.Domain.Api\\obj\\",
+      "projectPath": "E:\\balta.io-cqrs-dotnetcode-ef\\Todo\\Todo.Domain.Api\\Todo.Domain.Api.csproj",
+      "packagesPath": "C:\\Users\\leand\\.nuget\\packages\\",
+      "outputPath": "E:\\balta.io-cqrs-dotnetcode-ef\\Todo\\Todo.Domain.Api\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\ldbdias\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\leand\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "http://srvv24:9090/nuget": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\balta.io-cqrs-dotnetcode-ef\\Todo\\Todo.Domain.Infra\\Todo.Domain.Infra.csproj": {
+              "projectPath": "E:\\balta.io-cqrs-dotnetcode-ef\\Todo\\Todo.Domain.Infra\\Todo.Domain.Infra.csproj"
+            },
+            "E:\\balta.io-cqrs-dotnetcode-ef\\Todo\\Todo.Domain\\Todo.Domain.csproj": {
+              "projectPath": "E:\\balta.io-cqrs-dotnetcode-ef\\Todo\\Todo.Domain\\Todo.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -66,7 +128,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
       }
     }
   }
