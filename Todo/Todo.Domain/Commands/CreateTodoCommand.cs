@@ -1,8 +1,9 @@
 using System;
+using Flunt.Notifications;
 
 namespace Todo.Domain.Commands
 {
-    public class CreateTodoCommand : ICommand
+    public class CreateTodoCommand : Notifiable, ICommand
     {
         public CreateTodoCommand()
         {
@@ -19,5 +20,10 @@ namespace Todo.Domain.Commands
         public string Title { get; set; }
         public string User { get; set; }
         public DateTime Date { get; set; }
+
+        public void Validate()
+        {
+
+        }
     }
 }
