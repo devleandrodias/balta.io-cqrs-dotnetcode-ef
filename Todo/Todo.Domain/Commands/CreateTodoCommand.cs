@@ -1,5 +1,6 @@
 using System;
 using Flunt.Notifications;
+using Flunt.Validations;
 
 namespace Todo.Domain.Commands
 {
@@ -23,7 +24,12 @@ namespace Todo.Domain.Commands
 
         public void Validate()
         {
-
+            AddNotifications(
+                new Contract()
+                    .Requires()
+                    .HasMinLen(Title, 3, "Title", "Por favor, descreve melhor sua tarefa")
+                    .HasMinLen(User, 4, "User", "Usuário inválido")
+            );
         }
     }
 }
