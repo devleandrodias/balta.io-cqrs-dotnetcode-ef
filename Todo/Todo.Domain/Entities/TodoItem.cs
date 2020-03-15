@@ -1,7 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Todo.Domain.Entities
 {
@@ -10,7 +7,7 @@ namespace Todo.Domain.Entities
 
         public TodoItem(string title, string user, DateTime date)
         {
-            Title  = title;
+            Title = title;
             Done = false;
             Date = date;
             User = user;
@@ -21,15 +18,18 @@ namespace Todo.Domain.Entities
         public DateTime Date { get; private set; }
         public string User { get; private set; }
 
-        public void MarkAsDone() {
+        public void MarkAsDone()
+        {
             Done = true;
         }
 
-        public void MarkAsUndone() {
+        public void MarkAsUndone()
+        {
             Done = true;
         }
 
-        public void UpdateTitle(string title) {
+        public void UpdateTitle(string title)
+        {
             Title = title;
         }
     }
