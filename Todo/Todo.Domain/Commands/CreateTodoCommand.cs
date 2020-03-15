@@ -29,7 +29,7 @@ namespace Todo.Domain.Commands
                 new Contract()
                     .Requires()
                     .HasMinLen(Title, 3, "Title", "Por favor, descreve melhor sua tarefa")
-                    .HasMinLen(User, 4, "User", "Usuário inválido")
+                    .HasMinLen(User, 4, "User", "Usuário deve ter mínimo 6 caracteres")
             );
         }
     }

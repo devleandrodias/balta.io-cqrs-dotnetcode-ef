@@ -5,20 +5,22 @@ using Todo.Domain.Commands.Contracts;
 
 namespace Todo.Domain.Commands
 {
-    public class MarkTodoAsDoneCommand : Notifiable, ICommand
+    public class UpdateTodoCommand : Notifiable, ICommand
     {
-        public MarkTodoAsDoneCommand()
+        public UpdateTodoCommand()
         {
 
         }
 
-        public MarkTodoAsDoneCommand(Guid id, string user)
+        public UpdateTodoCommand(Guid id, string title, string user)
         {
             Id = id;
+            Title = title;
             User = user;
         }
 
         public Guid Id { get; set; }
+        public string Title { get; set; }
         public string User { get; set; }
 
         public void Validate()
