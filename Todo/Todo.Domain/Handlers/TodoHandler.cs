@@ -40,7 +40,23 @@ namespace Todo.Domain.Handlers
 
         public ICommandResult Handle(UpdateTodoCommand command)
         {
-            throw new System.NotImplementedException();
+            // Fail Fast Validation
+            command.Validate();
+
+            if (command.Invalid)
+                return new GenericCommandResult(false, "Ops, parece que sua mensagem está errada", command.Notifications);
+
+            // Recuperar um TodoItem (Rehidratação)
+            var todo = _repository.GetById(command.Id, command.User);
+
+            // Altera o título
+            todo.UpdateTitle(command.Title);
+
+            // Salvar no banco
+            _repository.Update(todo);
+
+            // Retorna o resultado
+            return new GenericCommandResult(true, "Tarefa atualizada com sucesso!", command.Notifications);
         }
     }
 }
