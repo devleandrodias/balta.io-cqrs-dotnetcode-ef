@@ -2,6 +2,7 @@ using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Todo.Domain.Commands;
 using Todo.Domain.Handlers;
+using Todo.Domain.Tests.Repositories;
 
 namespace Todo.Domain.Tests.HandlerTests
 {
@@ -12,7 +13,7 @@ namespace Todo.Domain.Tests.HandlerTests
         public void Dado_um_comando_invalido_deve_interrompar_a_execucao()
         {
             CreateTodoCommand createTodoCommand = new CreateTodoCommand("", "", DateTime.Now);
-            TodoHandler todoHandler = new TodoHandler(repository: null);
+            TodoHandler todoHandler = new TodoHandler(new FakeTodoRepository());
             Assert.Fail();
         }
 
