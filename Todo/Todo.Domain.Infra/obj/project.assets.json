@@ -225,11 +225,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\balta.io-cqrs-dotnetcode-ef\\Todo\\Todo.Domain.Infra\\Todo.Domain.Infra.csproj",
+      "projectUniqueName": "e:\\balta.io-cqrs-dotnetcode-ef\\Todo\\Todo.Domain.Infra\\Todo.Domain.Infra.csproj",
       "projectName": "Todo.Domain.Infra",
-      "projectPath": "E:\\balta.io-cqrs-dotnetcode-ef\\Todo\\Todo.Domain.Infra\\Todo.Domain.Infra.csproj",
+      "projectPath": "e:\\balta.io-cqrs-dotnetcode-ef\\Todo\\Todo.Domain.Infra\\Todo.Domain.Infra.csproj",
       "packagesPath": "C:\\Users\\leand\\.nuget\\packages\\",
-      "outputPath": "E:\\balta.io-cqrs-dotnetcode-ef\\Todo\\Todo.Domain.Infra\\obj\\",
+      "outputPath": "e:\\balta.io-cqrs-dotnetcode-ef\\Todo\\Todo.Domain.Infra\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\leand\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -243,8 +243,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "E:\\balta.io-cqrs-dotnetcode-ef\\Todo\\Todo.Domain\\Todo.Domain.csproj": {
-              "projectPath": "E:\\balta.io-cqrs-dotnetcode-ef\\Todo\\Todo.Domain\\Todo.Domain.csproj"
+            "e:\\balta.io-cqrs-dotnetcode-ef\\Todo\\Todo.Domain\\Todo.Domain.csproj": {
+              "projectPath": "e:\\balta.io-cqrs-dotnetcode-ef\\Todo\\Todo.Domain\\Todo.Domain.csproj"
             }
           }
         }

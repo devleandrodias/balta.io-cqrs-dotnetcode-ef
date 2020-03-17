@@ -6919,11 +6919,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\balta.io-cqrs-dotnetcode-ef\\Todo\\Todo.Domain.Tests\\Todo.Domain.Tests.csproj",
+      "projectUniqueName": "e:\\balta.io-cqrs-dotnetcode-ef\\Todo\\Todo.Domain.Tests\\Todo.Domain.Tests.csproj",
       "projectName": "Todo.Domain.Tests",
-      "projectPath": "E:\\balta.io-cqrs-dotnetcode-ef\\Todo\\Todo.Domain.Tests\\Todo.Domain.Tests.csproj",
+      "projectPath": "e:\\balta.io-cqrs-dotnetcode-ef\\Todo\\Todo.Domain.Tests\\Todo.Domain.Tests.csproj",
       "packagesPath": "C:\\Users\\leand\\.nuget\\packages\\",
-      "outputPath": "E:\\balta.io-cqrs-dotnetcode-ef\\Todo\\Todo.Domain.Tests\\obj\\",
+      "outputPath": "e:\\balta.io-cqrs-dotnetcode-ef\\Todo\\Todo.Domain.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\leand\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -6937,8 +6937,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "E:\\balta.io-cqrs-dotnetcode-ef\\Todo\\Todo.Domain\\Todo.Domain.csproj": {
-              "projectPath": "E:\\balta.io-cqrs-dotnetcode-ef\\Todo\\Todo.Domain\\Todo.Domain.csproj"
+            "e:\\balta.io-cqrs-dotnetcode-ef\\Todo\\Todo.Domain\\Todo.Domain.csproj": {
+              "projectPath": "e:\\balta.io-cqrs-dotnetcode-ef\\Todo\\Todo.Domain\\Todo.Domain.csproj"
             }
           }
         }
