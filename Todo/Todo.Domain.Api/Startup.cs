@@ -5,6 +5,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Todo.Domain.Infra.Contexts;
 using Microsoft.EntityFrameworkCore;
+using Todo.Domain.Ropositories;
+using Todo.Domain.Handlers;
+using Todo.Domain.Infra.Repositories;
 
 namespace Todo.Domain.Api
 {
@@ -21,6 +24,8 @@ namespace Todo.Domain.Api
         {
             services.AddControllers();
             services.AddDbContext<DataContext>(options => options.UseInMemoryDatabase("Database"));
+            services.AddTransient<ITodoRepository, TodoRepository>();
+            services.AddTransient<TodoHandler, TodoHandler>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

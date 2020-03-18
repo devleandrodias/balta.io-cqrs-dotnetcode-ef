@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using Todo.Domain.Entities;
 using Todo.Domain.Ropositories;
 
-namespace Todo.Domain.Tests.Repositories
+namespace Todo.Domain.Infra.Repositories
 {
-    public class FakeTodoRepository : ITodoRepository
+    public class TodoRepository : ITodoRepository
     {
         public void Create(TodoItem item)
         {
-
+            throw new NotImplementedException();
         }
 
         public IEnumerable<TodoItem> GetAll(string user)
@@ -34,12 +34,12 @@ namespace Todo.Domain.Tests.Repositories
 
         public TodoItem GetById(Guid id, string user)
         {
-            return new TodoItem("Título Aqui", "devleandrodias", DateTime.Now);
+            throw new NotImplementedException();
         }
 
         public void Update(TodoItem item)
         {
-
+            throw new NotImplementedException();
         }
     }
 }
