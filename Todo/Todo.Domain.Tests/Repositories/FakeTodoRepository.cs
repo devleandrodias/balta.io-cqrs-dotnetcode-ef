@@ -17,7 +17,7 @@ namespace Todo.Domain.Tests.Repositories
             throw new NotImplementedException();
         }
 
-        public IEnumerable<TodoItem> GetAllByPeriod(string user)
+        public IEnumerable<TodoItem> GetAllByPeriod(string user, DateTime date, bool done)
         {
             throw new NotImplementedException();
         }
