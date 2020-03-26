@@ -1,4 +1,4 @@
-# Desenvolvendo API utilizando .Net Core, CQRS e Entity Framework Core
+## Desenvolvendo API utilizando .Net Core, CQRS e Entity Framework Core
 
 ### Curso realizado com objetivo de aprimorar os conhecimentos e aprender novas tecnologias
 
